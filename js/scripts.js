@@ -26,7 +26,14 @@ const database = {
         "REST Não, GraphQL",
         "Remando Na Galheta",
         "Roupa No Galo",
-        "ReNeGados"
+        "ReNeGados",
+        "Roda No Github",
+        "Robôs Niilistas Gigantes",
+        "Raio Não Gourmetizador",
+        "Roedores Normalmente Gordos",
+        "Rodas Naturalmente Grandes",
+        "Rosbife Na Grelha",
+        "Roses N Guns",
     ]
 }
 
