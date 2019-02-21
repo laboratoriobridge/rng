@@ -24,7 +24,8 @@ const database = {
         "Ricardo Nascimento Gonçalves",
         "Reunião Não, Gabriel",
         "REST Não, GraphQL",
-        "Remando na Galheta"
+        "Remando Na Galheta",
+        "Roupa No Galo"
     ]
 }
 
