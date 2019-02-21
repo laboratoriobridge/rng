@@ -38,6 +38,7 @@ const database = {
         "Reggaeton, Not Good",
         "Roda Não Giratoria",
         "React No Geral",
+        "Refresh Não Gasta",
     ]
 }
 
