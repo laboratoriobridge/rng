@@ -34,6 +34,7 @@ const database = {
         "Rodas Naturalmente Grandes",
         "Rosbife Na Grelha",
         "Roses N Guns",
+        "Rindo Nos Gazeia",
     ]
 }
 
