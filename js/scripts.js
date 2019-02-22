@@ -45,6 +45,7 @@ const database = {
         "Rainha Não Gracinha",
         "Rolando na Graxa",
         "Rave Noix Gosta",
+        "Ratos Nascidos em Goiânia"
     ]
 }
 
@@ -66,4 +67,4 @@ window.addEventListener('keyup', function (e) {
     if (e.keyCode === 71) {
         startGame()
     }
-  })
+})
