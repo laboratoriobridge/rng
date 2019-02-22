@@ -44,6 +44,7 @@ const database = {
         "Rezei Não Ganhei",
         "Rainha Não Gracinha",
         "Rolando na Graxa",
+        "Rave Noix Gosta",
     ]
 }
 
