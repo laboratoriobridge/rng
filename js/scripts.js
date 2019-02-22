@@ -61,3 +61,9 @@ const rollTheDice = () => {
 }
 
 sayMyName()
+
+window.addEventListener('keyup', function (e) {
+    if (e.keyCode === 71) {
+        startGame()
+    }
+  })
