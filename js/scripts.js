@@ -50,3 +50,11 @@ const database = {
 
 const index = Math.floor(Math.random() * database.names.length)
 document.getElementById("nomeEquipe").innerHTML = database.names[index]
+
+const rollTheDice = () => {
+    const index = Math.floor(Math.random() * database.names.length)
+    document.getElementById("nomeEquipe").innerHTML = database.names[index]
+    document.querySelector(".dado").classList.remove("dado-animation")
+    document.querySelector(".dado").classList.remove("dado-spin")
+    window.setTimeout(() => document.querySelector(".dado").classList.add("dado-spin"))
+}
