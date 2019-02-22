@@ -36,6 +36,14 @@ const database = {
         "Roses N Guns",
         "Rindo Nos Gazeia",
         "Reggaeton, Not Good",
+        "Roda Não Giratoria",
+        "React No Geral",
+        "Refresh Não Gasta",
+        "Racker Nem é Gente",
+        "Ri Não Gente",
+        "Rezei Não Ganhei",
+        "Rainha Não Gracinha",
+        "Rolando na Graxa",
     ]
 }
 
