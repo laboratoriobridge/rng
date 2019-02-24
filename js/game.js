@@ -24,7 +24,13 @@ var myGameArea = {
         window.addEventListener('keydown', function (e) {
             myGameArea.key = e.keyCode;
           })
+        window.addEventListener('touchstart', function (e) {
+            myGameArea.key = 38; //GAMBS
+          })
         window.addEventListener('keyup', function (e) {
+            myGameArea.key = false;
+          })
+        window.addEventListener('touchend', function (e) {
             myGameArea.key = false;
           })
         },
@@ -117,8 +123,6 @@ function updateGameArea() {
         } 
     }
     
-    console.log(this.myGameArea.key)
-
     myGameArea.clear();
     myGameArea.frameNo += 1;
     if (myGameArea.frameNo == 1 || everyinterval(150)) {

@@ -68,3 +68,7 @@ window.addEventListener('keyup', function (e) {
         startGame()
     }
 })
+
+document.getElementById("nomeEquipe").addEventListener('touchstart', function (e) {
+    startGame()
+})
