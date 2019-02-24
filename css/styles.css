@@ -1,24 +1,55 @@
 body {
   font-family: "Nunito", sans-serif;
-  overflow: hidden;
+}
+
+img {
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .dado {
+    width: 25% !important;
+    right: 18vw !important;
+  }
+  .fogo {
+    width: 39% !important;
+    left: 18vw !important;
+    bottom: 2vw !important;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .fogo {
+    bottom: 2vw !important;
+  }
 }
 
 .container {
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  margin-top: 20vh;
-  width: 100%;
-}
-
-.img-container {
-  margin-right: 150px;
+  width: 90%;
 }
 
 .dado {
-  max-width: 300px;
-  position: relative;
-  z-index: 2;
-  left: 300px;
+  width: 15%;
+  right: 11vw;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
+  z-index: 2;
+}
+
+.fogo {
+  width: 23%;
+  left: 11vw;
+  bottom: 3vh;
+  z-index: 1;
+  -webkit-animation: slide-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .dado-animation {
@@ -29,13 +60,4 @@ body {
 .dado-spin {
   -webkit-animation: spin 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: spin 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.fogo {
-  max-width: 480px;
-  position: relative;
-  z-index: 1;
-  top: -15px;
-  -webkit-animation: slide-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
