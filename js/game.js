@@ -89,13 +89,20 @@ function component(width, height, color, x, y, type) {
         this.gravitySpeed += this.gravity;
         this.x += this.speedX;
         this.y += this.speedY + this.gravitySpeed;
-        this.hitBottom();
+        this.hitEdges();
     }
-    this.hitBottom = function() {
+    this.hitEdges = function() {
         var rockbottom = myGameArea.canvas.height - this.height;
+        var rooftop = 0;
+
         if (this.y > rockbottom) {
             this.y = rockbottom;
-            this.gravitySpeed = 0;
+            this.gravitySpeed = -0.2;
+        }
+
+        if (this.y < rooftop ) {
+            this.y = rooftop;
+            this.gravitySpeed = 0.05;
         }
     }
     this.crashWith = function(otherobj) {
@@ -130,7 +137,7 @@ function updateGameArea() {
         minHeight = 20;
         maxHeight = 200;
         height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
-        minGap = 50;
+        minGap = 60;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
         myObstacles.push(new component(10, height, "#6ec6ec", x, 0));
