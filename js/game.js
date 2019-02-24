@@ -2,17 +2,17 @@ var myGamePiece;
 var myObstacles = [];
 var myScore;
 
-function startGame() {
+function startGame(gamewidht) {
     myGamePiece = new component(50, 50, "images/rng-h.png", 10, 120,"image");
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
-    myGameArea.start();
+    myScore = new component("30px", "Consolas", "black", 100, 40, "text");
+    myGameArea.start(gamewidht);
 }
 
 var myGameArea = {
     canvas : document.createElement("canvas"),
-    start : function() {
-        this.canvas.width = 645;
+    start : function(gamewidht) {
+        this.canvas.width = gamewidht | 645;
         this.canvas.height = 420;
         this.context = this.canvas.getContext("2d");
         document.getElementById("game").appendChild(this.canvas)
@@ -137,7 +137,7 @@ function updateGameArea() {
         myObstacles.push(new component(10, x - height - gap, "#6ec6ec", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
-        myObstacles[i].x += -1;
+        myObstacles[i].x += -2;
         myObstacles[i].update();
     }
     myScore.text="SCORE: " + myGameArea.frameNo;

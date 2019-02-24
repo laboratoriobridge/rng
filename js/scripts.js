@@ -70,5 +70,5 @@ window.addEventListener('keyup', function (e) {
 })
 
 document.getElementById("nomeEquipe").addEventListener('touchstart', function (e) {
-    startGame()
+    startGame(375)
 })
