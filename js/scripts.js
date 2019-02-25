@@ -45,7 +45,9 @@ const database = {
         "Rainha Não Gracinha",
         "Rolando na Graxa",
         "Rave Noix Gosta",
-        "Ratos Nascidos em Goiânia"
+        "Ratos Nascidos em Goiânia",
+        "Rir Não Gasta",
+        "Random Name Generator",
     ]
 }
 
