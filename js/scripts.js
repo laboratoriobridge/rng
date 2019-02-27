@@ -48,6 +48,7 @@ const database = {
         "Ratos Nascidos em Goiânia",
         "Rir Não Gasta",
         "Random Name Generator",
+        "Rápido No Gatilho",
     ]
 }
 
