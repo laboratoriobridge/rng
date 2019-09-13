@@ -1,5 +1,5 @@
 const database = {
-    "names" : [
+    "names": [
         "Raça NeGra",
         "Redesign Não Gosto",
         "Rindo na Garoa",
@@ -66,8 +66,11 @@ const rollTheDice = () => {
 
 sayMyName()
 
+let gameStarted = false;
+
 window.addEventListener('keyup', function (e) {
-    if (e.keyCode === 71) {
+    if (e.keyCode === 71 && !gameStarted) {
+        gameStarted = true;
         startGame()
     }
 })
